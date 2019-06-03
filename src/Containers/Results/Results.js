@@ -44,13 +44,13 @@ class Results extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   presidents: state.presidents,
   isLoadingStatus: state.isLoadingStatus,
   errorMessage: state.errorMessage
 })
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   setPresidents: presidents => dispatch(setPresidents(presidents)),
   hasErrored: error => dispatch(hasErrored(error)),
   isLoading: bool => dispatch(isLoading(bool))
