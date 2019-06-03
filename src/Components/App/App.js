@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
-import Results from '../Results/Results'
+import Results from '../../Containers/Results/Results'
 
 class App extends Component {
 
